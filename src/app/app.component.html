@@ -1,0 +1,8 @@
+<div>
+  <a routerLink="/login" *ngIf="!isLoggedIn()">Login</a>
+  <a routerLink="/register" *ngIf="!isLoggedIn()">Register</a>
+</div>
+<div *ngIf="isLoggedIn()">
+  <span (click)="logout()">Logout</span>
+</div>
+<router-outlet></router-outlet>
