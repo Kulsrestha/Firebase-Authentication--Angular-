@@ -4,6 +4,6 @@
   <a routerLink="/register" *ngIf="!isLoggedIn()">Register</a>
 </div>
 <div *ngIf="isLoggedIn()">
-  <span (click)="logout()">Logout</span>
+  <span (click)="logout()">Logout Button</span>
 </div>
 <router-outlet></router-outlet>
